@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1" />
+    <title>Module-2 Solution</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      .T12 {
+        border: 1px solid black;
+        margin: 2px;
+        position: relative;
+        padding-top: 50px;
+        background-color: thistle;
+      }
+
+      /* .T1 {
+        position: relative;
+        padding-top: 50px;
+      } */
+
+      .innerbox1 {
+        border: 1px solid black;
+        height: 30px;
+        width: 60px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        background-color: chocolate;
+      }
+      .innerbox2 {
+        border: 1px solid black;
+        height: 30px;
+        width: 60px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        background-color: red;
+      }
+      .innerbox3 {
+        border: 1px solid black;
+        height: 30px;
+        width: 60px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        background-color: yellow;
+      }
+
+      @media (min-width: 992px) {
+        .col-lg-4 {
+          float: left;
+        }
+        .col-lg-4 {
+          width: 33%;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .col-md-6 {
+          float: left;
+        }
+        .col-md-6 {
+          width: 50%;
+        }
+      }
+      @media (max-width: 767px) {
+        .col-sm-12 {
+          float: left;
+        }
+        .col-sm-12 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Our Menu</h1>
+    <div class="container-fluid">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="T12">
+          <div><p class="innerbox1">Chicken</p></div>
+          <p>
+            The value of health is vital for every human on Earth. Many people
+            have to suffer from diseases to allergies and stuck with a not so
+            good life for their entire life. If people had control over health,
+            then they would make sure that there are no issues with it.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="T12">
+          <div><p class="innerbox2">Beef</p></div>
+          <p>
+            The value of health is vital for every human on Earth. Many people
+            have to suffer from diseases to allergies and stuck with a not so
+            good life for their entire life. If people had control over health,
+            then they would make sure that there are no issues with it.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="T12">
+          <div><p class="innerbox3">Sushi</p></div>
+          <p>
+            The value of health is vital for every human on Earth. Many people
+            have to suffer from diseases to allergies and stuck with a not so
+            good life for their entire life. If people had control over health,
+            then they would make sure that there are no issues with it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
